@@ -1,4 +1,19 @@
+:root {
+--heading-background-color:steelblue;
+--padding: 1rem;
+--margin: 1rem;
+}
 
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    
+}
 nav{
     background-color:steelblue; 
     padding:10px;}
@@ -8,32 +23,40 @@ nav a {
     padding: 20px;
 }
 h1 {
-    color:steelblue
+    color:steelblue;
+    padding: .5rem;
 }
 
 main img{
+    float: right;
     width: 150px; 
     height: auto; 
     border: 1px solid steelblue; 
     padding: 2px; 
     box-shadow: 0 0 30px gray;
+    margin:0 0 1rem 1rem;
 }
 
 p{
     padding: 0;
+    margin: 1rem;
+    font-size: 14pt;
 }
 
 main{
     max-width: 840px;
+   
 }
 
-aside{
+aside h2 {
+    position: absolute; 
+    top: 50px;
+    right: 60px;   
+}
+aside {
+    position: relative;
     width:20rem ;
-    margin:1rem ;
-    border:1px solid rgba(0, 0, 0, 0.2);
-    padding:1rem ;
-    background-color:#eee ;
-    color:#333 ;
+    height: auto;
     text-align: center;
 }
 
@@ -47,3 +70,24 @@ footer{
     border-top:1px solid #000;
     text-align: center;
 }
+
+
+/* Class Selectors */
+.box {
+margin: var(--margin);
+border:1px solid rgba(0, 0, 0, 0.1) ;
+padding: var(--padding);
+background-color: rgb(238, 241, 220);
+color: black;
+}
+
+.indent{
+    padding-left: 2rem;
+}
+
+
+
+/* Universal	 * { ... }	Applies to all elements
+    Type	    h1 { ... }	Applies to all <h1> elements
+    Class	    .red { ... }	Applies to all elements with the "red" class value
+    ID	        #red { ... }	Applies to the one element with the "red" id value */
