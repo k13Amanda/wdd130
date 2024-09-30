@@ -1,9 +1,9 @@
 
 :root {
     --main-color:134, 187, 216; /* #86BBD8  this is the hex i need the rdb to get the rgba*/
-    --secondary-color:#224159;/* #224159 */
-    --accent1-color: #BCD8AC; /* #BCD8AC */
-    --accent2-color:#E6D6C6; /* #E6D6C6 */
+    --secondary-color:#224159;
+    --accent1-color: #BCD8AC; 
+    --accent2-color:#E6D6C6; 
 }
 
 *{
@@ -18,7 +18,7 @@
 }
 
 header{
-    background-color: var(--main-color);
+    background-color: rgb(var(--main-color));
     font-size: 14pt;
 }
 header img{
