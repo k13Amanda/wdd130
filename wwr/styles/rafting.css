@@ -84,7 +84,6 @@ header nav a{
     margin: 20px;
     color: var(--secondary-color);
     font-size: 14pt;
-    
 }
 
 .hero h1{
@@ -102,8 +101,8 @@ header nav a{
 .history{
     display: grid;
     place-items: center;
-    grid-template-columns:40% 20% 40%;
-    grid-template-rows: 25% 75%;
+    grid-template-columns:38% 25% 37%;
+    grid-template-rows: 20% 80%;
     border: solid var(--secondary-color);
     margin: 15px;
     background-color:var(--accent2-color);
@@ -116,8 +115,6 @@ header nav a{
     grid-row-start: 2;
     margin: 15px;
     border: solid var(--secondary-color);
-
-
 }
 
 .words{
@@ -130,7 +127,6 @@ header nav a{
     margin: 15px;
     grid-column: 3/4;
     grid-row: 2/3;
-    
 }
 
 .history h2{
@@ -145,30 +141,31 @@ header nav a{
     border: solid var(--secondary-color);
     margin: 15px;
     grid-template-columns: repeat(5,20%);
-    grid-template-rows: 20% 60% 20%;
+    grid-template-rows: 20% 80%;
     background-color:var(--accent2-color);
 }
 
 .adventure h2{
-    grid-column: 1 / -1;
+    grid-column: 1/-1;
     grid-row: 1;
     text-align: center;
     margin: 0;
     color:var(--secondary-color);
     padding: 5px;
 }
-.adventure figcaption{
-    grid-column: span 1;
-    grid-row: 3/4;
-}
+
 
 .adventure img{
-    grid-column: span 1;
+    grid-column: 1/2;
     grid-row: 2/3;
     margin: 20px;
     height: 120px; 
     width: auto;
     border: solid var(--secondary-color);
+}
+
+figcaption{
+    text-align: center;
 }
 
 footer{
@@ -214,9 +211,6 @@ footer{
 footer p{
     grid-column: 1/2;
     grid-row: 2/3;
-
-
-
 }
 
 footer a, img{
