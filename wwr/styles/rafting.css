@@ -19,7 +19,9 @@
 
 header{
     display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     grid-template-columns: 1fr 2fr ;
     background-color: rgb(var(--main-color));
     font-size: 14pt;
@@ -35,7 +37,6 @@ header img{
 }
 
 header nav{
-    grid-column: 2/3 ;
     color: var(--secondary-color);
 }
 
