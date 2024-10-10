@@ -104,39 +104,53 @@ header nav a{
 }
 
 .history{
+    display: grid;
+    place-items: center;
+    grid-template-columns:40% 20% 40%;
+    grid-template-rows: 25% 75%;
     border: solid var(--secondary-color);
-    display: flex;
-    justify-content: center;
-    align-items: justify;
     margin: 15px;
 }
 
 .history img{
-    display: block;
-    float: left;
-    margin: 15px;
     height: 200px;
     width: auto;
+    grid-column: 2/3;
+    grid-row-start: 2;
+    margin: 15px;
+    border: solid var(--secondary-color);
+
+
 }
 
-.history p {
-    display: inline-block;
-    width: calc(100% - 230px);
-}   
+.history p1 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin: 15px;
+}  
+
+.history p2 {
+    margin: 15px;
+    grid-column: 3/4;
+    grid-row: 2/3;
+    
+}
 
 .history h2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding: 5px;
     background-color:var(--accent2-color);
     color:var(--secondary-color);
 }
 
 .adventure {
-    justify-content: center;
-    align-items: start;
+    display: grid;
+    place-items: center;
     border: solid var(--secondary-color);
     margin: 15px;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: auto 1fr;
+    grid-template-columns: repeat(5,20%);
+    grid-template-rows: 20% 60% 20%;
 }
 
 .adventure h2{
@@ -146,30 +160,77 @@ header nav a{
     margin: 0;
     background-color:var(--accent2-color);
     color:var(--secondary-color);
+    padding: 5px;
 
+
+}
+.adventure figcaption{
+    grid-column: span 1;
+    grid-row: 3/4;
+    /* margin-left: 100px ; */
 }
 
 .adventure img{
     grid-column: span 1;
-    grid-row: 2;
+    grid-row: 2/3;
     padding: 15pt;
-    margin: 15pt;
+    /* margin-left: 40pt; */
     height: 100px; 
     width: auto;
 }
 
 footer{
-    display: flex;
-    justify-content: center;
-    align-items:center;
+    display: grid;
+    place-items: center;
+    grid-template-columns:40% 20% 20% 20%;
+    grid-template-rows: 70% 30%;
     border: solid var(--secondary-color);
     margin: 15px;
     background-color: var(--main-color);
+    text-decoration: none;  
+
 }
 
-footer a, img{
+.facebook{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.facebook_logo{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.twitter{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.twitter_logo{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.insta{
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+
+.insta_logo{
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+
+footer p{
+    grid-column: 1/2;
+    grid-row: 2/3;
+
+
+
+}
+
+/* footer a, img{ */
     /* align-self: flex-end; */
     
-    padding: 20px;
-    text-decoration: none;  
-}
+    /* padding: 20px; */
+    /* text-decoration: none;   */
