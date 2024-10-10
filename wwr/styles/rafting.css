@@ -120,13 +120,13 @@ header nav a{
 
 }
 
-.history p1 {
+.words{
     grid-column: 1/2;
     grid-row: 2/3;
     margin: 15px;
 }  
 
-.history p2 {
+.morewords{
     margin: 15px;
     grid-column: 3/4;
     grid-row: 2/3;
