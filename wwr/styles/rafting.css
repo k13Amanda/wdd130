@@ -18,30 +18,55 @@
 }
 
 header{
+    display: grid;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-template-columns: 1fr 2fr ;
     background-color: rgb(var(--main-color));
     font-size: 14pt;
-}
-header img{
-    margin-top: 15px;
-    margin-left: 15px;
+    margin: 15px;
     border: solid var(--secondary-color);
 }
 
+header img{
+    grid-column: 1/2 ;
+    margin: 15px;;
+    border: solid var(--secondary-color);
+    padding: 0;
+}
+
 header nav{
+    grid-column: 2/3 ;
     padding: 15px;
     color: var(--secondary-color);
+        margin: 15px;
+
+}
+
+header nav a{
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: var(--secondary-color);
+    border: solid var(--secondary-color);
+    text-decoration: none;
+    font-size: 16pt;
+    background-color: white;
 }
 
 .hero {
     position: relative;
-    margin: 10px;
-    padding: 10px;
+    margin: 15px;
+    border: solid var(--secondary-color);
 }  
 
 .hero img {
     display: block;
     width: 100%;
     height: auto;
+    margin: 0;
 }
 
 .hero article img{
@@ -49,6 +74,7 @@ header nav{
     height: 200px;
     width: auto;
     border: solid var(--secondary-color);
+    padding: 0;
 }
 
 .hero article {
@@ -59,16 +85,15 @@ header nav{
     width: auto;  
     background-color: rgba(var(--main-color), 0.9);
     padding: 30px;
-    margin-top: 20px;
+    margin: 20px;
     color: var(--secondary-color);
     font-size: 14pt;
+    
 }
 
 .hero h1{
     position: absolute;
     top: 100px;
-    margin: 10px;
-    padding: 10px;
     right: 0;
     left: 0;
     font-family: splash, Impact, 'Arial Narrow Bold', serif;
@@ -78,19 +103,73 @@ header nav{
     text-align: center;
 }
 
-section img{
-    display: block;
-    padding: 15pt;
-    margin: 15pt;
+.history{
+    border: solid var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: justify;
+    margin: 15px;
 }
 
-section h2{
+.history img{
+    display: block;
+    float: left;
+    margin: 15px;
+    height: 200px;
+    width: auto;
+}
+
+.history p {
+    display: inline-block;
+    width: calc(100% - 230px);
+}   
+
+.history h2{
     background-color:var(--accent2-color);
     color:var(--secondary-color);
 }
 
+.adventure {
+    justify-content: center;
+    align-items: start;
+    border: solid var(--secondary-color);
+    margin: 15px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto 1fr;
+}
 
-footer a {
+.adventure h2{
+    grid-column: 1 / -1;
+    grid-row: 1;
+    text-align: center;
+    margin: 0;
+    background-color:var(--accent2-color);
+    color:var(--secondary-color);
+
+}
+
+.adventure img{
+    grid-column: span 1;
+    grid-row: 2;
+    padding: 15pt;
+    margin: 15pt;
+    height: 100px; 
+    width: auto;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    border: solid var(--secondary-color);
+    margin: 15px;
+    background-color: var(--main-color);
+}
+
+footer a, img{
+    /* align-self: flex-end; */
+    
     padding: 20px;
     text-decoration: none;  
 }
