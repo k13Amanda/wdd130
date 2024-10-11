@@ -1,6 +1,6 @@
 
 :root {
-    --main-color:134, 187, 216; /* #86BBD8  this is the hex i need the rdb to get the rgba*/
+    --main-color:134, 187, 216; /* #86BBD8 is the hex, I need the rdb to get the rgba*/
     --secondary-color:#224159;
     --accent1-color: #BCD8AC; 
     --accent2-color:#E6D6C6; 
@@ -19,8 +19,6 @@
 
 header{
     display: grid;
-    display: flex;
-    justify-content: space-evenly;
     align-items: center;
     grid-template-columns: 1fr 2fr ;
     background-color: rgb(var(--main-color));
@@ -31,12 +29,18 @@ header{
 
 header img{
     grid-column: 1/2 ;
+    justify-self:center ;
+    align-self: center;
     margin: 15px;;
     border: solid var(--secondary-color);
     padding: 0;
 }
 
 header nav{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    margin-right: 80px;
     color: var(--secondary-color);
 }
 
@@ -59,6 +63,7 @@ header nav a{
 }  
 
 .hero img {
+    position: relative;
     display: block;
     width: 100%;
     height: auto;
@@ -153,7 +158,6 @@ header nav a{
     color:var(--secondary-color);
     padding: 5px;
 }
-
 
 .adventure img{
     grid-column: 1/2;
