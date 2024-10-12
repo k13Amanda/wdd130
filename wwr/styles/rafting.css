@@ -237,10 +237,13 @@ legend{
 button{
     background-color: var(--secondary-color);
     color:white;
-    margin:  15px;
     padding: 10px;
+    margin: 5px;
     border: none;
     border-radius: 1.2rem;
+}
+button:hover{
+    background-color: darkgreen;
 }
 
 .profile{
@@ -292,4 +295,8 @@ iframe{
 
 .contact{
     margin: 50px;
+}
+
+.sendmessage{
+    margin:0;
 }
