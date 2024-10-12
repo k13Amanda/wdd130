@@ -224,7 +224,8 @@ footer a, img{
 form{
     border: 5px solid black;
     background-color: var(--accent2-color);
-    max-width: 500px;
+    width: 700px;
+    height: 450px;
     font-size: 14pt;
     margin: 15px;
     padding: 25px;
@@ -250,6 +251,7 @@ button{
 .profile img{
     height: 300px;
     width: auto;
+    border: 5px solid black;
 }
 
 .cinfo{
@@ -260,7 +262,7 @@ button{
 
 iframe{
     grid-column: 2/3;
-    width: 650pt;
+    width: 755pt;
     height: 400pt;
     border: 0;
     border: 1px solid black;
@@ -272,6 +274,22 @@ iframe{
     padding: 20px;
     font-size: 14pt;    
 }
+
+.formcontact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+
+.emppic{
+    grid-column: 2/3;
+    height: 495px;
+    width: auto;
+    margin: 15px;
+    border: 5px solid black;
+
+}
+
 .contact{
     margin: 50px;
 }
