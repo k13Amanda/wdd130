@@ -220,3 +220,58 @@ footer p{
 footer a, img{
     text-decoration: none;
 } 
+
+form{
+    border: 5px solid black;
+    background-color: var(--accent2-color);
+    max-width: 500px;
+    font-size: 14pt;
+    margin: 15px;
+    padding: 25px;
+}
+legend{
+    font-weight: bold;
+}
+
+button{
+    background-color: var(--secondary-color);
+    color:white;
+    margin:  15px;
+    padding: 10px;
+    border: none;
+    border-radius: 1.2rem;
+}
+
+.profile{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+}
+.profile img{
+    height: 300px;
+    width: auto;
+}
+
+.cinfo{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 15px;
+}
+
+iframe{
+    grid-column: 2/3;
+    width: 650pt;
+    height: 400pt;
+    border: 0;
+    border: 1px solid black;
+}
+
+.phone{
+    grid-column: 1/2;
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 14pt;    
+}
+.contact{
+    margin: 50px;
+}
