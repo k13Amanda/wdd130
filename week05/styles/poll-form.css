@@ -1,0 +1,108 @@
+
+
+
+input, label,
+textarea,
+select, button{
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+input, select, textarea{
+    padding: 15px;
+    font-size: 14pt;
+}
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 14pt;
+    color: black;
+    background: fff;
+}
+
+header{
+    font-size: 20pt;
+    color: navy;
+    margin: 0;
+    width: 650px;
+}
+
+h1{
+    margin: 15px;
+    font-size: 25px;
+    color: navy;
+    text-align: center;
+}
+
+form{
+    width: 650px;
+    margin: 15px;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius:0.5rem ;
+    background-color: rgb(240, 240,240);
+    display: grid;
+}
+
+fieldset{    
+    display: grid ;
+    grid-gap:10px;
+    margin: 15px;
+    padding: 15px;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+
+legend{
+    color: navy;
+    border: solid black;
+    padding: 15px;
+    font-size: 20px;
+}
+
+button{
+    background-color:navy;
+    color:white;
+    margin:  15px;
+    padding: 10px;
+    font-size: 12pt;
+    border: none;
+    border-radius: 1.2rem;
+
+}
+
+button:hover{
+    background-color: darkgreen;
+}
+
+label{
+    text-align: right;
+    padding-right: 15px;
+}
+
+input [type="checkbox"]{
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+.form-item{
+    display: grid;
+    align-items: center;
+}
+
+.column1{
+    grid-template-columns: 3fr 1fr;
+    margin: 15px;
+}
+
+.column2{
+    grid-template-columns: 1fr 2fr;
+    margin: 15px;
+}
+
+footer{
+    text-align: center;
+    border-top: 1px solid black;
+    width: 650px;
+    margin: 15px auto 0;
+    font-size: 12pt;
+    color: #777;
+}
