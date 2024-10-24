@@ -246,6 +246,9 @@ button{
 button:hover{
     background-color: darkgreen;
 }
+a:hover{
+    text-decoration: underline;
+}
 
 .profile{
     display: grid;
@@ -315,7 +318,7 @@ iframe{
 }
 .tri_image p{
     font-size: 20pt;
-    grid-column: 2/3;
+    grid-column: 2/3; 
 }
 .tri_image figure{
     grid-row: 2/3;
@@ -323,7 +326,7 @@ iframe{
 .tri_image img{
     width: 300px;
     height: auto;
-    border: 10px solid var(--secondary-color);
+    border: 10px ridge var(--secondary-color);
 }
 
 .tri_image{
@@ -332,6 +335,19 @@ iframe{
 .tri_image figcaption{
     font-size: 14pt;
 }
+
+.rapids, .family, .camping h2{
+    /* padding: 5px; */
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+.rapids, .family, .camping {
+    padding: 15px;
+    margin: 15px;
+    border: 15px ridge var(--secondary-color);
+}
+
 .thrill{
     display: grid;
     height: 650px;
